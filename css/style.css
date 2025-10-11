@@ -21,6 +21,17 @@
     --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
 
     --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-black: 900;
 }
 
 body::-webkit-scrollbar{
@@ -31,4 +42,41 @@ body{
     background: var(--body-color);
     font-family: var(--body-font);
     color: white;
+}
+header{
+    height: 100%;
+}
+header > nav{
+    display: flex;
+    height: var(--header-height);
+    background: var(--body-color);
+    align-items: center;
+    justify-content: space-around;
+    font-size: var(--normal-font-size);
+    position: fixed;
+    width: 100%;
+}
+header > nav > ul{
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+}
+header a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+header > nav > a{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header > nav > a > img{
+    height: 2rem;
+}
+header > nav > input{
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
 }
