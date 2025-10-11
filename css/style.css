@@ -35,6 +35,15 @@
     --font-black: 900;
 }
 
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+
 h2{
     font-size: var(--h2-font-size);
     text-transform: uppercase;
@@ -76,13 +85,8 @@ header > nav{
     width: 100%;
 }
 header > nav > ul{
-    list-style: none;
     display: flex;
     gap: 3.5rem;
-}
-header a{
-    text-decoration: none;
-    color: var(--text-color);
 }
 header > nav > a{
     display: flex;
@@ -236,4 +240,59 @@ main > section:nth-child(7) > div > fieldset > div{
 }
 main > section:nth-child(7) > div > fieldset > img{
     width: 100%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+footer > section{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+footer > section > article:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+footer > section > article{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 20vw;
+}
+footer > section > article:nth-child(1) > a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+footer > section > article:nth-child(1) > p{
+    width: 75%;
+}
+footer > section > article:nth-child(1) > a > img{
+    height: 2rem;
+}
+footer > section > article:nth-child(1) > section > div > a > img{
+    width: 2rem;
+}
+footer > section > article:nth-child(1) > section > div > img{
+    width: 15rem;
+}
+footer > section > article:nth-child(1) > section{
+    display: flex;
+    flex-direction: row;
+}
+footer > section > article:nth-child(4) > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+footer > section > article:nth-child(4){
+    display: flex;
+    flex-direction: row;
+}
+footer > section > article:nth-child(4) > img{
+    height: 15rem;
 }
