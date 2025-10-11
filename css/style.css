@@ -21,7 +21,8 @@
     --paragraphe-color : #d3d2ce;
     --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
     --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
-    
+    --orange-color : #f45120;
+
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
     --h2-font-size: 3rem;
@@ -153,7 +154,7 @@ main > section > article:nth-child(2) > div > input{
 }
 
 main > section > article:nth-child(2) > div > input:nth-child(1){
-    background-color: orange;
+    background: var(--orange-color);
 }
 main > section > article:nth-child(2) > div > input:nth-child(2){
     background-color: transparent;
@@ -192,7 +193,7 @@ main > section:nth-child(5) > div > img{
     width: 25vw;
 }
 main > section:nth-child(5) > div > article > div > input{
-    background-color: orange;
+    background: var(--orange-color);
     color: var(--text-color);
     border: none;
     padding: 1rem;
@@ -257,7 +258,7 @@ main > section:nth-child(7) > div > fieldset > div:first-child{
 }
 main > section:nth-child(7) > div > fieldset > div:first-child > span{
     color: var(--first-color);
-    background-color: orange;
+    background: var(--orange-color);
     padding: 0.2rem 0.5rem 0.2rem 0.5rem;
     border-radius: 0.5em;
 }
@@ -269,7 +270,7 @@ main > section:nth-child(7) > div > fieldset > div{
     gap: 1rem;
 }
 main > section:nth-child(7) > div > fieldset > div:last-child > span{
-    color: orange;
+    color: var(--orange-color);
     text-decoration: line-through;
 }
 main > section:nth-child(7) > div > fieldset > span{
@@ -340,4 +341,19 @@ footer > span{
     display: flex;
     width: 100%;
     justify-content: center;
+}
+footer > a{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3vw;
+}
+footer > a > button{
+    background : var(--container-color);
+    border: none;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 0.3rem;
+    color: var(--text-color);
+}
+footer > a > button:hover{
+    cursor: pointer;
 }
