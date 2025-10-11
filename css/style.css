@@ -19,7 +19,8 @@
     --text-color: hsl(var(var(--hue)), 4%, 85%);
     --text-color-light: hsl(var(var(--hue)), 4%, 55%);
     --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
-
+    --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
+    
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
     --h2-font-size: 1.5rem;
@@ -178,4 +179,35 @@ main > section:nth-child(5) > div > article > div > input{
     border: none;
     padding: 1rem;
     border-radius: 1rem;
+}
+main > section:nth-child(6){
+    display: flex;
+    flex-direction: column;
+}
+main > section:nth-child(6) > h3{
+    width: 100%;
+    text-align: center;
+}
+main > section:nth-child(6) > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+main > section:nth-child(6) > article > div{
+    display: flex;
+    gap: 10vw;
+}
+main > section:nth-child(6) > article > div > fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: var(--container-color);
+    padding: 2rem 3rem 2rem 3rem;
+    border-radius: 1rem;
+}
+main > section:nth-child(6) > article > div > fieldset > img{
+    width: 10vw;
 }
