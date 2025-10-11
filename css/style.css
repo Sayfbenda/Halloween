@@ -18,13 +18,14 @@
     --title-color: hsl(var(var(--hue)), 4%, 100%);
     --text-color: hsl(var(var(--hue)), 4%, 85%);
     --text-color-light: hsl(var(var(--hue)), 4%, 55%);
+    --paragraphe-color : #d3d2ce;
     --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
     --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
     
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 1.5rem;
     --h4-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -46,18 +47,23 @@ ul{
 
 h2{
     font-size: var(--h2-font-size);
+    color: var(--title-color);
     text-transform: uppercase;
+    font-weight: var(--font-black);
 }
 
 h3{
     font-size: var(--h3-font-size);
+    color: var(--title-color);
     text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
 }
 
 h4{
     font-size: var(--h4-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
 }
-
 html{
     scroll-behavior: smooth;
     z-index: auto;
@@ -110,6 +116,9 @@ main > section{
     gap: 5rem;
     height: 100vh;
 }
+main > section > article > p{
+    color : var(--paragraphe-color);
+}
 main > section > article:nth-child(1) > div{
     display: flex;
     flex-direction: column;
@@ -132,6 +141,10 @@ main > section > article:nth-child(2){
     justify-content: space-evenly;
 }
 
+main > section > div > article > span{
+    color: var(--paragraphe-color);
+}
+
 main > section > article:nth-child(2) > div > input{
     border: none;
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
@@ -145,6 +158,7 @@ main > section > article:nth-child(2) > div > input:nth-child(1){
 main > section > article:nth-child(2) > div > input:nth-child(2){
     background-color: transparent;
 }
+
 main > section:nth-child(4){
     display: flex;
     flex-direction: column;
@@ -212,6 +226,9 @@ main > section:nth-child(6) > article > div > fieldset{
     padding: 2rem 3rem 2rem 3rem;
     border-radius: 1rem;
 }
+main > section:nth-child(6) > article > div > fieldset > span{
+    color: var(--paragraphe-color);
+}
 main > section:nth-child(6) > article > div > fieldset > img{
     width: 10vw;
 }
@@ -234,6 +251,29 @@ main > section:nth-child(7) > div > fieldset{
     flex-direction: column;
     text-align: center;
     align-items: center;
+}
+main > section:nth-child(7) > div > fieldset > div:first-child{
+    width: 100%;
+}
+main > section:nth-child(7) > div > fieldset > div:first-child > span{
+    color: var(--first-color);
+    background-color: orange;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.5em;
+}
+main > section:nth-child(7) > div > fieldset > div > h5{
+    font-size: var(--normal-font-size);
+}
+main > section:nth-child(7) > div > fieldset > div{
+    display: flex;
+    gap: 1rem;
+}
+main > section:nth-child(7) > div > fieldset > div:last-child > span{
+    color: orange;
+    text-decoration: line-through;
+}
+main > section:nth-child(7) > div > fieldset > span{
+    color: var(--paragraphe-color);
 }
 main > section:nth-child(7) > div > fieldset > div{
     display: flex;
@@ -295,4 +335,9 @@ footer > section > article:nth-child(4){
 }
 footer > section > article:nth-child(4) > img{
     height: 15rem;
+}
+footer > span{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
