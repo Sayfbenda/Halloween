@@ -7,6 +7,8 @@ function normalMode() {
     root.style.setProperty("--text-color", "#f5f5f7")
     root.style.setProperty("--title-color", "#f5f5f7")
     root.style.setProperty("--paragraphe-color", "#d3d2ce")
+    inpsupport.style.setProperty("border", "0.2rem solid #f5f5f7")
+
 }
 
 function fondNoir() {
