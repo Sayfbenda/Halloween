@@ -1,5 +1,6 @@
 const root = document.documentElement
 const inpsupport = document.getElementById("inpsupport")
+const support = document.getElementById("supportdiv")
 
 function normalMode() {
     root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
@@ -27,4 +28,9 @@ function fondBlanc() {
     root.style.setProperty("--title-color", "#1d1d1f")
     root.style.setProperty("--paragraphe-color", "#6e6e73")
     inpsupport.style.setProperty("border", "0.2rem solid #1d1d1f")
+}
+
+function ouvrirOuFermerSupport() {
+    support.setAttribute("style", "visibility: hidden")
+    console.log(support.style.width)
 }

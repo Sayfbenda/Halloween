@@ -388,6 +388,34 @@ main > section:nth-child(9) > fieldset > input:nth-child(3):checked{
     border: 3px solid #1d1d1f;
 }
 
+main > section:nth-child(10){
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 0;
+    right: 5vh;
+    width: fit-content;
+    height: fit-content;
+    background: var(--container-color);
+
+}
+main > section:nth-child(10) > div{
+    width: 15vw;
+}
+
+main > section:nth-child(10) > div > div:first-child{
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+
+main > section:nth-child(10) > div > div:nth-child(2){
+    height: 30vh;
+}
+main > section:nth-child(10) > div > div:nth-child(3) > input{
+    width: 80%;
+    border: none;
+    padding: 0.5rem;
+}
 
 footer{
     display: flex;
