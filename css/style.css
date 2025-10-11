@@ -98,56 +98,56 @@ header > nav > input{
     border: 0.2rem solid white;
     border-radius: 1rem;
 }
-main > div > section{
+main > section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     height: 100vh;
 }
-main > div > section > article:nth-child(1) > div{
+main > section > article:nth-child(1) > div{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-main > div > section:nth-child(1){
+main > section:nth-child(1){
     padding-top: var(--header-height);
 }
-main > div > section > article{
+main > section > article{
     width: 45vw;
     height: 90vh;
 }
-main > div > section > article:nth-child(1)> img{
+main > section > article:nth-child(1)> img{
     width: 35vw;
 }
 
-main > div > section > article:nth-child(2){
+main > section > article:nth-child(2){
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-main > div > section > article:nth-child(2) > div > input{
+main > section > article:nth-child(2) > div > input{
     border: none;
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
     border-radius: 0.5rem;
     color: var(--text-color);
 }
 
-main > div > section > article:nth-child(2) > div > input:nth-child(1){
+main > section > article:nth-child(2) > div > input:nth-child(1){
     background-color: orange;
 }
-main > div > section > article:nth-child(2) > div > input:nth-child(2){
+main > section > article:nth-child(2) > div > input:nth-child(2){
     background-color: transparent;
 }
-main > div > section:nth-child(4){
+main > section:nth-child(4){
     display: flex;
     flex-direction: column;
 }
-main > div > section:nth-child(4) > div{
+main > section:nth-child(4) > div{
     display: flex;
 }
-main > div > section:nth-child(4) > div > article{
+main > section:nth-child(4) > div > article{
     width: 30vw;
     text-align: center;
     display: flex;
@@ -155,6 +155,27 @@ main > div > section:nth-child(4) > div > article{
     align-items: center;
 }
 
-main > div > section:nth-child(4) > div > article > img{
+main > section:nth-child(4) > div > article > img{
     width: 20rem;
+}
+main > section:nth-child(5) > div{
+    display: flex;
+    padding: 5rem;
+    gap: 5rem;
+}
+main > section:nth-child(5) > div > article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40vw;
+}
+main > section:nth-child(5) > div > img{
+    width: 25vw;
+}
+main > section:nth-child(5) > div > article > div > input{
+    background-color: orange;
+    color: var(--text-color);
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
 }
