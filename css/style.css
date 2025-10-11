@@ -3,16 +3,38 @@
     margin: 0;
     transition: 1s;
 }
-/* body::-webkit-scrollbar{
+
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+:root{
+    --header-height: 3.5rem;
+
+    --hue: 14;
+    --first-color: hsl(var(var(--hue)), 91%, 54%);
+    --first-color-alt: hsl(var(var(--hue)), 91%, 50%);
+    --title-color: hsl(var(var(--hue)), 4%, 100%);
+    --text-color: hsl(var(var(--hue)), 4%, 85%);
+    --text-color-light: hsl(var(var(--hue)), 4%, 55%);
+    --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
+
+    --body-font: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar{
     display: none;
-} */
+}
 body{
-    /* overflow: hidden; */
-    background-color: gainsboro;
+    overflow: hidden;
+    background: var(--body-color);
+    font-family: var(--body-font);
+    color: white;
 }
 header{
-    height: 8vh;
-    background-color: gray;
+    height: var(--header-height);
+    background-color: transparent;
     width: 100vw;
 }
 header > nav{
@@ -28,7 +50,7 @@ header > nav > ul{
 }
 main > div > section:nth-child(1){
     height: 92vh;
-    background-color: rosybrown;
+    background-color: transparent;
 }
 main > div{
     display: flex;
@@ -68,22 +90,16 @@ main > div > section:nth-child(1) > article:nth-child(2) > div > input:last-chil
 }
 main > div > section:nth-child(2){
     height: 92vh;
-    background-color: black;
+    background-color: transparent;
     width: 100vw;
 }
 main > div > section:nth-child(3){
     height: 92vh;
-    background-color: orange;
+    background-color: transparent;
     width: 100vw;
 }
 main > div > section:nth-child(4){
     height: 92vh;
-    background-color: blue;
+    background-color: transparent;
     width: 100vw;
-}
-.sectionsortante{
-    translate: -100vw;
-}
-.sectionentrante{
-    translate: 100vw;
 }

@@ -1,52 +1,37 @@
-let section = ""
-let prochainesection = ""
-let actuellesection = 1
-let transitionout = 0
+let div = ""
+let page = 1
 let transitionin = 0
+let transitionout = 0
 
-let listesection = ["acceuil", "apropos", "bonbons", "nouveautes"]
-
-
-function sectionactuelle() {
-    console.log(section)
-    if (actuellesection <= 0){
-        actuellesection = 1
-    }else if (actuellesection == 1){
-        transitionout = 100
-        transitionin = -100
-        section = document.getElementById(listesection[0])
-        prochainesection = document.getElementById(listesection[1])
-        console.log(section)
-    }else if (actuellesection == 2){
-        transitionin = -200
-        section = document.getElementById(listesection[1])
-        prochainesection = document.getElementById(listesection[2])
+function pageactuelle(page) {
+    if (page == 1){
+        transitionin = 100
+        transitionout = 0
     }
-    else if (actuellesection == 3){
-        transitionin = -300
-        section = document.getElementById(listesection[2])
-        prochainesection = document.getElementById(listesection[3])
+    if (page == 2){
+        transitionin = 200
+        transitionout = 0
     }
-    else if (actuellesection == 4){
-        section = document.getElementById(listesection[3])
-        prochainesection = document.getElementById(listesection[4])
-    }else if (actuellesection >= 4){
-        actuellesection = 4
+    if (page == 3){
+        transitionin = 300
+        transitionout = -100
+    }
+    if (page == 4){
+        transitionin = 400
+        transitionout = -200
     }
 }
 
 addEventListener('wheel', (event)=> {
-    sectionactuelle()
+    pageactuelle(page)
     if (event.deltaY > 0) {
-        section.setAttribute("style", `translate : ${-transitionout+"vw"}`)
-        prochainesection.setAttribute("style", `translate : ${transitionin+"vw"}`)
-        actuellesection +=1
-        console.log(actuellesection)
-        transitionout += 100
-    }
-    else{
-        section.setAttribute("class", "sectionentrante")
-        actuellesection -= 1
-    }
-    console.log(event)
+        if (page < 4){
+            div = document.getElementById("page")
+            div.setAttribute("style", `translate : ${-transitionin}vw`)
+            page += 1 
+        }
+    }else if(event.deltaY < 0){
+            div.setAttribute("style", `translate : ${transitionout}vw`) 
+            page -=1
+    } 
 })
