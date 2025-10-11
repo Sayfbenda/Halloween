@@ -36,10 +36,12 @@
 
 h2{
     font-size: var(--h2-font-size);
+    text-transform: uppercase;
 }
 
 h3{
     font-size: var(--h3-font-size);
+    text-transform: uppercase;
 }
 
 h4{
