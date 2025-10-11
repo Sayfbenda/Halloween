@@ -16,8 +16,7 @@
     --first-color: hsl(var(var(--hue)), 91%, 54%);
     --first-color-alt: hsl(var(var(--hue)), 91%, 50%);
     --title-color: hsl(var(var(--hue)), 4%, 100%);
-    --text-color: hsl(var(var(--hue)), 4%, 85%);
-    --text-color-light: hsl(var(var(--hue)), 4%, 55%);
+    --text-color: #f5f5f7;
     --paragraphe-color : #d3d2ce;
     --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
     --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
@@ -35,6 +34,10 @@
     --font-medium: 500;
     --font-semi-bold: 600;
     --font-black: 900;
+}
+
+@media screen and (min-width: 992px) {
+    
 }
 
 input[type="submit"]:hover{
@@ -80,7 +83,7 @@ body::-webkit-scrollbar{
 body{
     background: var(--body-color);
     font-family: var(--body-font);
-    color: white;
+    color: var(--text-color);
 }
 header > nav{
     display: flex;
@@ -111,7 +114,7 @@ header > nav > input{
     background-color: transparent;
     color: var(--text-color);
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
-    border: 0.2rem solid white;
+    border: 0.2rem solid #f5f5f7;
     border-radius: 1rem;
 }
 main > section{
@@ -323,6 +326,20 @@ main > section:nth-child(8) > article > div{
 
 main > section:nth-child(8) > article > img{
     width: 20vw;
+}
+main > section:nth-child(9){
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 50vh;
+    right: 0;
+}
+main > section:nth-child(9) > fieldset{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1vw;
 }
 
 footer{

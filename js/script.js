@@ -1,37 +1,28 @@
-// let div = ""
-// let page = 1
-// let transitionin = 0
-// let transitionout = 0
+const root = document.documentElement
+const inpsupport = document.getElementById("inpsupport")
 
-// function pageactuelle(page) {
-//     if (page == 1){
-//         transitionin = 100
-//         transitionout = 0
-//     }
-//     if (page == 2){
-//         transitionin = 200
-//         transitionout = 0
-//     }
-//     if (page == 3){
-//         transitionin = 300
-//         transitionout = -100
-//     }
-//     if (page == 4){
-//         transitionin = 400
-//         transitionout = -200
-//     }
-// }
+function normalMode() {
+    root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
+    root.style.setProperty("--container-color", "linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%)")
+    root.style.setProperty("--text-color", "#f5f5f7")
+    root.style.setProperty("--title-color", "#f5f5f7")
+    root.style.setProperty("--paragraphe-color", "#d3d2ce")
+}
 
-// addEventListener('wheel', (event)=> {
-//     pageactuelle(page)
-//     if (event.deltaY > 0) {
-//         if (page < 4){
-//             div = document.getElementById("page")
-//             div.setAttribute("style", `translate : ${-transitionin}vw`)
-//             page += 1 
-//         }
-//     }else if(event.deltaY < 0){
-//             div.setAttribute("style", `translate : ${transitionout}vw`) 
-//             page -=1
-//     } 
-// })
+function fondNoir() {
+    root.style.setProperty("--body-color", "#181818")
+    root.style.setProperty("--container-color", "linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(28, 28, 28, 1) 50%, rgba(15, 15, 15, 1) 100%)")
+    root.style.setProperty("--text-color", "#f5f5f7")
+    root.style.setProperty("--title-color", "#f5f5f7")
+    root.style.setProperty("--paragraphe-color", "#6e6e73")
+    inpsupport.style.setProperty("border", "0.2rem solid #f5f5f7")
+}
+
+function fondBlanc() {
+    root.style.setProperty("--body-color", "#f5f5f7")
+    root.style.setProperty("--container-color", "linear-gradient(115deg, #ffffff, #d4d4d4)")
+    root.style.setProperty("--text-color", "#1d1d1f")
+    root.style.setProperty("--title-color", "#1d1d1f")
+    root.style.setProperty("--paragraphe-color", "#6e6e73")
+    inpsupport.style.setProperty("border", "0.2rem solid #1d1d1f")
+}
