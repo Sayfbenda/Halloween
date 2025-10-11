@@ -37,6 +37,10 @@
     --font-black: 900;
 }
 
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -189,6 +193,9 @@ main > section:nth-child(5) > div > article{
     justify-content: space-around;
     width: 40vw;
 }
+main > section:nth-child(5) > div > article > p{
+    color: var(--paragraphe-color);
+}
 main > section:nth-child(5) > div > img{
     width: 25vw;
 }
@@ -282,6 +289,31 @@ main > section:nth-child(7) > div > fieldset > div{
 main > section:nth-child(7) > div > fieldset > img{
     width: 100%;
 }
+
+main > section:nth-child(8){
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+
+main > section:nth-child(8) > article{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: 2rem 4rem 2rem 4rem;
+    border-radius: 3rem;
+    background: var(--container-color);
+}
+main > section:nth-child(8) > article > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > section:nth-child(8) > article > img{
+    width: 20vw;
+}
+
 footer{
     display: flex;
     flex-direction: column;
