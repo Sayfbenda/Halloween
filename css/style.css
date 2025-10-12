@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    transition: 2s;
 }
 
 @font-face {
@@ -395,8 +394,8 @@ main > section:nth-child(10){
     right: 5vh;
     width: fit-content;
     height: fit-content;
+    visibility: hidden;
     background: var(--container-color);
-
 }
 main > section:nth-child(10) > div{
     width: 15vw;

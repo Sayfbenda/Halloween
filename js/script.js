@@ -1,6 +1,7 @@
 const root = document.documentElement
 const inpsupport = document.getElementById("inpsupport")
 const support = document.getElementById("supportdiv")
+const inpchat = document.getElementById("inpchat")
 
 function normalMode() {
     root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
@@ -30,7 +31,15 @@ function fondBlanc() {
     inpsupport.style.setProperty("border", "0.2rem solid #1d1d1f")
 }
 
-function ouvrirOuFermerSupport() {
-    support.setAttribute("style", "visibility: hidden")
-    console.log(support.style.width)
+function fermerSupport() {
+    support.setAttribute("style", "visibility : hidden")
+    chatSupport()
+}
+
+function apparaitreSupport() {
+    support.setAttribute("style", "visibility : visible")
+}
+
+function chatSupport() {
+    console.log(inpchat.value)
 }
