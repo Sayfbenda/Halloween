@@ -80,6 +80,12 @@ function gestionPub() {
     }, 50000);
 }
 
+addEventListener("keypress", (event)=>{
+    if ((event.key == "Enter") && (inpchat.value.length != 0)) {
+        envoyerMessage()
+    }
+})
+
 const sectionentrante = new IntersectionObserver((entries) =>{
     entries.forEach((entry)=>{
         console.log(entry)
