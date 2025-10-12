@@ -4,6 +4,7 @@ const support = document.getElementById("supportdiv")
 const inpchat = document.getElementById("inpchat")
 const supportChat = document.getElementById("supportChat")
 const signupsection = document.getElementById("signup")
+const pub = document.getElementById("pub")
 
 function normalMode() {
     root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
@@ -58,3 +59,15 @@ function envoyerMessage() {
 function signUp() {
     signupsection.setAttribute("style", "visibility : visible")
 }
+
+function fermerPub() {
+    pub.setAttribute("style", "visibility : hidden")
+}
+
+function gestionPub() {
+    setInterval(() => {
+        pub.setAttribute("style", "visibility: visible")
+    }, 10000);
+}
+
+gestionPub()
