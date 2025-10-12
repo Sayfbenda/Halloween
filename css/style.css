@@ -430,7 +430,6 @@ main > section:nth-child(11){
     visibility: hidden;
     top: 0;
     width: 100%;
-    transition: 1s;
 }
 main > section:nth-child(11) > form{
     display: flex;
@@ -448,6 +447,11 @@ main > section:nth-child(11) > form > div:last-child{
 
 main > section:nth-child(11) > form > div:last-child > div{
     background-color: black;
+}
+
+main > section:nth-child(11) > form > div > a{
+    display: flex;
+    justify-content: flex-end;
 }
 
 main > section:nth-child(11) > form > div{

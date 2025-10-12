@@ -5,6 +5,7 @@ const inpchat = document.getElementById("inpchat")
 const supportChat = document.getElementById("supportChat")
 const signupsection = document.getElementById("signup")
 const pub = document.getElementById("pub")
+let t = ""
 
 function normalMode() {
     root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
@@ -60,14 +61,18 @@ function signUp() {
     signupsection.setAttribute("style", "visibility : visible")
 }
 
+function fermerSignup(params) {
+    signupsection.setAttribute("style", "visibility : hidden")
+}
+
 function fermerPub() {
     pub.setAttribute("style", "visibility : hidden")
+    clearInterval(t)
+    gestionPub()
 }
 
 function gestionPub() {
-    setInterval(() => {
+    t = setInterval(() => {
         pub.setAttribute("style", "visibility: visible")
-    }, 10000);
+    }, 50000);
 }
-
-gestionPub()
