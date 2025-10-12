@@ -2,6 +2,7 @@ const root = document.documentElement
 const inpsupport = document.getElementById("inpsupport")
 const support = document.getElementById("supportdiv")
 const inpchat = document.getElementById("inpchat")
+const supportChat = document.getElementById("supportChat")
 
 function normalMode() {
     root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
@@ -40,5 +41,9 @@ function apparaitreSupport() {
 }
 
 function envoyerMessage() {
-    console.log(inpchat.value)
+    console.log(supportChat)
+    let html = `
+    <div class="usermessage"><p>test</p></div>
+    `
+    supportChat.insertAdjacentHTML("beforeend", html)
 }

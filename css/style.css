@@ -83,7 +83,7 @@ body{
     background: var(--body-color);
     font-family: var(--body-font);
     color: var(--text-color);
-    transition: 1s;
+    transition: 2s;
 }
 header > nav{
     display: flex;
@@ -409,10 +409,31 @@ main > section:nth-child(10) > div > div:first-child{
 }
 
 main > section:nth-child(10) > div > div:nth-child(2){
+    overflow-y: scroll;
     height: 30vh;
     margin: 0 0.5rem 0 0.5rem ;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 0.2rem;
+}
+main > section:nth-child(10) > div > div:nth-child(2) > div{
+    font-size: 0.8rem;
+}
+.supportmessage{
+    width: fit-content;
+}
+.supportmessage > p{
+    background-color: #39ff5a;
+    padding: 1rem;
+}
+.usermessage{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    width: 100%;
+}
+.usermessage > p{
+    padding: 1rem;
+    background-color: #218aff;
 }
 main > section:nth-child(10) > div > div:nth-child(3) > input{
     width: 80%;
