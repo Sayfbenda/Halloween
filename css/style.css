@@ -56,11 +56,18 @@ ul{
     list-style: none;
 }
 
+p{
+    animation-name: entrer;
+    animation-duration: 2s;
+}
+
 h2{
     font-size: var(--h2-font-size);
     color: var(--title-color);
     text-transform: uppercase;
     font-weight: var(--font-black);
+    animation-name: entrer;
+    animation-duration: 2s;
 }
 
 h3{
@@ -68,12 +75,16 @@ h3{
     color: var(--title-color);
     text-transform: uppercase;
     font-weight: var(--font-semi-bold);
+    animation-name: entrer;
+    animation-duration: 2s;
 }
 
 h4{
     font-size: var(--h4-font-size);
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+    animation-name: entrer;
+    animation-duration: 2s;
 }
 html{
     scroll-behavior: smooth;
@@ -632,6 +643,18 @@ section img:hover{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     transition: 1s;
+}
+
+@keyframes entrer {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 @keyframes flotter {
