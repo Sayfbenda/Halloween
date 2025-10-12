@@ -6,6 +6,7 @@ const supportChat = document.getElementById("supportChat")
 const signupsection = document.getElementById("signup")
 const pub = document.getElementById("pub")
 const navlist = document.getElementById("navlist")
+let iold = 0
 let ilist = 0
 let t = ""
 
@@ -85,18 +86,26 @@ const sectionentrante = new IntersectionObserver((entries) =>{
         if (entry.isIntersecting) {
             console.log(entry.target.id)
             if (entry.target.id == "acceuil") {
+                iold = ilist
+                removeborderList(iold)
                 ilist = 0
                 navbarIndication(ilist)
             }
             else if (entry.target.id == "apropos") {
+                iold = ilist
+                removeborderList(iold)
                 ilist = 1
                 navbarIndication(ilist)
             }
             else if (entry.target.id == "bonbons") {
+                iold = ilist
+                removeborderList(iold)
                 ilist = 2
                 navbarIndication(ilist)
             }
             else if (entry.target.id == "nouveautes") {
+                iold = ilist
+                removeborderList(iold)
                 ilist = 3
                 navbarIndication(ilist)
             }
@@ -110,5 +119,8 @@ const sections = document.querySelectorAll(".animation")
 sections.forEach((el) => sectionentrante.observe(el))
 
 function navbarIndication(ilist) {
-    navlist.children[ilist].setAttribute("style", "border-bottom : 1px solid black")
+    navlist.children[ilist].setAttribute("style", "border-bottom : 0.2rem solid white")
+}
+function removeborderList(iold) {
+    navlist.children[iold].setAttribute("style", "border-bottom : none")
 }
