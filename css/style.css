@@ -41,6 +41,8 @@
 
 input[type="submit"]:hover{
     cursor: pointer;
+    animation-name : buttonanimation;
+    animation-duration: 1s;
 }
 
 button:hover{
@@ -674,5 +676,17 @@ section img:hover{
     }
     100%{
         translate: 0 2;
+    }
+}
+
+@keyframes buttonanimation {
+    0%{
+
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        background-color: #218aff;
     }
 }
