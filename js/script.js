@@ -41,9 +41,19 @@ function apparaitreSupport() {
 }
 
 function envoyerMessage() {
-    console.log(supportChat)
+    let htmlsupport = `
+    <div class="supportmessage"><p>Votre message a été transmi ! un 
+    de nos technicien entrera en contact avec vous bientôt.</p></di>
+    `
     let html = `
-    <div class="usermessage"><p>test</p></div>
+    <div class="usermessage"><p>${inpchat.value}</p></div>
     `
     supportChat.insertAdjacentHTML("beforeend", html)
+    setTimeout(() => {
+        supportChat.insertAdjacentHTML("beforeend", htmlsupport)
+    }, 2000);
+}
+
+function baisserSupportBox() {
+    
 }

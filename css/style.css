@@ -414,6 +414,7 @@ main > section:nth-child(10) > div > div:nth-child(2){
     margin: 0 0.5rem 0 0.5rem ;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 0.2rem;
+    color: 	#fdfdfd;
 }
 main > section:nth-child(10) > div > div:nth-child(2) > div{
     font-size: 0.8rem;
