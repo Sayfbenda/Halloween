@@ -110,7 +110,7 @@ header > nav > a{
 header > nav > a > img{
     height: 2rem;
 }
-header > nav > input{
+header > nav > div > input{
     background-color: transparent;
     color: var(--text-color);
     padding: 0.8rem 1.5rem 0.8rem 1.5rem;
@@ -419,11 +419,44 @@ main > section:nth-child(10) > div > div:nth-child(2){
 main > section:nth-child(10) > div > div:nth-child(2) > div{
     font-size: 0.8rem;
 }
+main > section:nth-child(11){
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+}
+main > section:nth-child(11) > form{
+    display: flex;
+    flex-direction: column;
+    background: var(--container-color);
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    border-radius: 1rem;
+}
+
+main > section:nth-child(11) > form > div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main > section:nth-child(11) > form > div:last-child > div{
+    background-color: black;
+}
+
+main > section:nth-child(11) > form > div{
+    display: flex;
+    flex-direction: column;
+}
+
 .supportmessage{
     width: fit-content;
 }
 .supportmessage > p{
-    background-color: #39ff5a;
+    background-color: #333333;
     padding: 1rem;
 }
 .usermessage{

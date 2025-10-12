@@ -3,6 +3,7 @@ const inpsupport = document.getElementById("inpsupport")
 const support = document.getElementById("supportdiv")
 const inpchat = document.getElementById("inpchat")
 const supportChat = document.getElementById("supportChat")
+const signupsection = document.getElementById("signup")
 
 function normalMode() {
     root.style.setProperty("--body-color", "linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%)")
@@ -54,6 +55,6 @@ function envoyerMessage() {
     }, 2000);
 }
 
-function baisserSupportBox() {
-    
+function signUp() {
+    signupsection.setAttribute("style", "visibility : visible")
 }
