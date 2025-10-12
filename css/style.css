@@ -83,6 +83,7 @@ body{
     background: var(--body-color);
     font-family: var(--body-font);
     color: var(--text-color);
+    transition: 1s;
 }
 header > nav{
     display: flex;
@@ -409,6 +410,9 @@ main > section:nth-child(10) > div > div:first-child{
 
 main > section:nth-child(10) > div > div:nth-child(2){
     height: 30vh;
+    margin: 0 0.5rem 0 0.5rem ;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0.2rem;
 }
 main > section:nth-child(10) > div > div:nth-child(3) > input{
     width: 80%;

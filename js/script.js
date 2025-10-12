@@ -33,13 +33,12 @@ function fondBlanc() {
 
 function fermerSupport() {
     support.setAttribute("style", "visibility : hidden")
-    chatSupport()
 }
 
 function apparaitreSupport() {
     support.setAttribute("style", "visibility : visible")
 }
 
-function chatSupport() {
+function envoyerMessage() {
     console.log(inpchat.value)
 }
