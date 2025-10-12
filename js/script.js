@@ -5,6 +5,8 @@ const inpchat = document.getElementById("inpchat")
 const supportChat = document.getElementById("supportChat")
 const signupsection = document.getElementById("signup")
 const pub = document.getElementById("pub")
+const navlist = document.getElementById("navlist")
+let ilist = 0
 let t = ""
 
 function normalMode() {
@@ -81,6 +83,23 @@ const sectionentrante = new IntersectionObserver((entries) =>{
     entries.forEach((entry)=>{
         console.log(entry)
         if (entry.isIntersecting) {
+            console.log(entry.target.id)
+            if (entry.target.id == "acceuil") {
+                ilist = 0
+                navbarIndication(ilist)
+            }
+            else if (entry.target.id == "apropos") {
+                ilist = 1
+                navbarIndication(ilist)
+            }
+            else if (entry.target.id == "bonbons") {
+                ilist = 2
+                navbarIndication(ilist)
+            }
+            else if (entry.target.id == "nouveautes") {
+                ilist = 3
+                navbarIndication(ilist)
+            }
             entry.target.classList.add("entre")
         }else{
             entry.target.classList.remove("entre")
@@ -89,3 +108,7 @@ const sectionentrante = new IntersectionObserver((entries) =>{
 })
 const sections = document.querySelectorAll(".animation")
 sections.forEach((el) => sectionentrante.observe(el))
+
+function navbarIndication(ilist) {
+    navlist.children[ilist].setAttribute("style", "border-bottom : 1px solid black")
+}
