@@ -61,7 +61,7 @@ function signUp() {
     signupsection.setAttribute("style", "visibility : visible")
 }
 
-function fermerSignup(params) {
+function fermerSignup() {
     signupsection.setAttribute("style", "visibility : hidden")
 }
 
@@ -76,3 +76,16 @@ function gestionPub() {
         pub.setAttribute("style", "visibility: visible")
     }, 50000);
 }
+
+const sectionentrante = new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("entre")
+        }else{
+            entry.target.classList.remove("entre")
+        }
+    })
+})
+const sections = document.querySelectorAll(".animation")
+sections.forEach((el) => sectionentrante.observe(el))
