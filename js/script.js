@@ -130,3 +130,15 @@ function navbarIndication(ilist) {
 function removeborderList(iold) {
     navlist.children[iold].setAttribute("style", "border-bottom : none")
 }
+
+const date = new Date()
+
+console.log(date)
+
+function surprise() {
+    if ((date.getDate() == 12) && date.getMonth() == 9) {
+        console.log("hello le goat")
+    }
+}
+
+surprise()
