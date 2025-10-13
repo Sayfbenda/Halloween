@@ -77,7 +77,7 @@ function fermerPub() {
 function gestionPub() {
     t = setInterval(() => {
         pub.setAttribute("style", "visibility: visible")
-    }, 50000);
+    }, 100000);
 }
 
 addEventListener("keypress", (event)=>{
