@@ -14,7 +14,7 @@
     --hue: 14;
     --first-color: hsl(var(var(--hue)), 91%, 54%);
     --first-color-alt: hsl(var(var(--hue)), 91%, 50%);
-    --title-color: hsl(var(var(--hue)), 4%, 100%);
+    --title-color: #f5f5f7;
     --text-color: #f5f5f7;
     --paragraphe-color : #d3d2ce;
     --body-color : linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
@@ -23,8 +23,8 @@
 
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
-    --h2-font-size: 3rem;
-    --h3-font-size: 1.5rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1rem;
     --h4-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -41,10 +41,42 @@
     }
 }
 
+h2{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: var(--font-black);
+}
+
+h3{
+    font-size: var(--h3-font-size);
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+}
+
+h4{
+    font-size: var(--h4-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+p, span{
+    color: var(--paragraphe-color);
+}
+
 body{
     background: var(--body-color);
 }
 
 .container-color{
     background: var(--container-color);
+}
+
+.btn-color-orange{
+    background: var(--orange-color);
+}
+
+.btn{
+    color: var(--text-color);
 }
