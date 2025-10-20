@@ -84,3 +84,7 @@ body{
 section{
     padding-top: 10vh;
 }
+
+section:nth-child(4) > div:nth-child(2) > article{
+    width: 40%;
+}
