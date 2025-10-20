@@ -40,3 +40,15 @@
         visibility: hidden;
     }
 }
+
+body{
+        background-color: black;
+}
+
+.container-color{
+    background: var(--container-color);
+}
+
+#nav-phone-img{
+    width: 20%;
+}
