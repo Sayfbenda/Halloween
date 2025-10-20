@@ -61,6 +61,10 @@ h4{
     font-weight: var(--font-semi-bold);
 }
 
+h5{
+    color: var(--text-color);
+}
+
 p, span{
     color: var(--paragraphe-color);
 }
@@ -88,4 +92,8 @@ section{
 section:nth-child(4) > div:nth-child(2) > article{
     width: 40%;
     height: 20%;
+}
+
+.orange-color{
+    color: var(--orange-color);
 }
