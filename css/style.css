@@ -42,7 +42,7 @@
 }
 
 body{
-        background-color: black;
+    background: var(--body-color);
 }
 
 .container-color{
@@ -52,3 +52,8 @@ body{
 #nav-phone-img{
     width: 20%;
 }
+
+#section-firstarticle > img{
+    height: 100%;
+}
+
