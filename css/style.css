@@ -48,12 +48,3 @@ body{
 .container-color{
     background: var(--container-color);
 }
-
-#nav-phone-img{
-    width: 20%;
-}
-
-#section-firstarticle > img{
-    height: 100%;
-}
-
