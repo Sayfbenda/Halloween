@@ -100,7 +100,6 @@ body{
     background: var(--body-color);
     font-family: var(--body-font);
     color: var(--text-color);
-    transition: 2s;
 }
 header > nav{
     display: flex;
