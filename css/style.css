@@ -80,3 +80,7 @@ body{
 .btn{
     color: var(--text-color);
 }
+
+section{
+    padding-top: 10vh;
+}
