@@ -35,3 +35,8 @@
     --font-black: 900;
 }
 
+@media (min-width: 576px){
+    #phonenav{
+        visibility: hidden;
+    }
+}
