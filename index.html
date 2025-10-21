@@ -3,367 +3,364 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Halloween 🎃</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">
-                <img src="img/logo.png" alt="">
-                Halloween
-            </a>
-            <ul id="navlist">
-                <a href="#acceuil">
-                    <li>Acceuil</li>
+        <div id="phonenav" class="position-fixed z-2 w-100">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <img class="position-absolute w-25" src="img/telnav.png" alt="">
+                <div class="container-color p-4 d-flex flex-column text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="#">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="#">Bonbons</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="#">Nouveautés</a>
+                        </li>
+                        <li>
+                            <button class="bg-transparent border border-white p-2 rounded-2">Support</button>
+                        </li>
+                        <li>
+                            <button class="bg-transparent border border-white p-2 rounded-2">Sign up</button>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            <nav class="navbar navbar-dark container-color">
+                <div class="d-flex w-100 justify-content-around">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="img/tetemort.png" alt="">
+                        <span>Halloween</span>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div id="pcnav">
+            <nav>
+                <a href="#">
+                    <img src="img/logo.png" alt="">
+                    Halloween
                 </a>
-                <a href="#apropos">
-                    <li>A Propos</li>
-                </a>
-                <a href="#bonbons">
-                    <li>Bonbons</li>
-                </a>
-                <a href="#nouveautes">
-                    <li>Nouveautés</li>
-                </a>
-            </ul>
-            <div>
-                <input type="submit" name="" id="inpsupport" value="Support" onclick="apparaitreSupport()">
-                <input type="submit" name="" id="inpsignup" value="Sign Up" onclick="signUp()">
-            </div>
-        </nav>
+                <ul id="navlist">
+                    <a href="#acceuil">
+                        <li>Acceuil</li>
+                    </a>
+                    <a href="#apropos">
+                        <li>A Propos</li>
+                    </a>
+                    <a href="#bonbons">
+                        <li>Bonbons</li>
+                    </a>
+                    <a href="#nouveautes">
+                        <li>Nouveautés</li>
+                    </a>
+                </ul>
+                <div>
+                    <input type="submit" name="" id="inpsupport" value="Support" onclick="apparaitreSupport()">
+                    <input type="submit" name="" id="inpsignup" value="Sign Up" onclick="signUp()">
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="animation" id="acceuil">
-            <article>
-                <div>
-                    <h4>La Labu "Reiza"</h4>
-                    <span>La citrouille vivante</span>
+        <section class="object-fit-contain">
+            <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100 ">
+                        <div class="vw-100 h-100 d-flex flex-column flex-row section-div">
+                            <article class="d-flex flex-column align-items-center section-article">
+                                <div class="d-flex flex-column align-items-end w-100">
+                                    <h4>La Labu "Reiza"</h4>
+                                    <span>La citrouille vivante</span>
+                                </div>
+                                <img style="width: 70vw;" src="img/acceuilcitr.png" alt="">
+                            </article>
+                            <article id="test" class="h-100 d-flex flex-column p-3 gap-3 section-article section-articlescnd">
+                                <h3>#1 Le fantôme le plus effrayant</h3>
+                                <h2>UOOOO <br> des bonbons ou <br>un sort !!</h2>
+                                <p>HLa maxime « un bonbon ou un sort » est la
+                                    traduction littérale de « Trick or Treats»
+                                    en français. Elle puise ses sources dans la
+                                    mythologie cletique, notamment dans l'histoire 
+                                    irlandaise du Ve siècle av.
+                                </p>
+                                <div>
+                                    <button type="button" class="btn btn-color-orange">En Savoir plus</button>
+                                    <button type="button" class="btn btn-transparent">Acheter des bonbons →</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="vw-100 h-100 d-flex flex-column flex-row section-div">
+                            <article class="d-flex flex-column align-items-center section-article">
+                                <div class="d-flex flex-column align-items-end w-100">
+                                    <h4>Les yurei</h4>
+                                    <span>fantôme du falkore japonais</span>
+                                </div>
+                                <img style="width: 70vw;" src="img/ghost.png" alt="">
+                            </article>
+                            <article class="h-100 d-flex flex-column p-3 gap-3 section-article section-articlescnd">
+                                <h3>#2 Yuu signifiant « sombre » et REI « âme ou Esprit»</h3>
+                                <h2>Donnez-moi <br> de la barbe <br>a papa</h2>
+                                <p>bien souvant dans la légende et mythes japonais,
+                                    les yurei sont des défunts qui ont subi une mort 
+                                    brutale, un destin tragique ou qui n'ont pas digéré leurs 
+                                    tourments sur Terre. Ne pouvant trouver la paix, ces derniers 
+                                    se retrouvent emprisonnés dans les limbes à tout jamais.
+                                </p>
+                                <div>
+                                    <button type="button" class="btn btn-color-orange">En Savoir plus</button>
+                                    <button type="button" class="btn btn-transparent">Acheter des bonbons →</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="vw-100 h-100 d-flex flex-column flex-row section-div">
+                            <article class="d-flex flex-column align-items-center section-article">
+                                <div class="d-flex flex-column align-items-end w-100">
+                                    <h4>La tête</h4>
+                                    <span>sans aucun doute anorexique</span>
+                                </div>
+                                <img style="width: 70vw;" src="img/bullefeu.png" alt="">
+                            </article>
+                            <article class="h-100 d-flex flex-column p-3 gap-3 section-article section-div">
+                                <h3>#3 La tête de mort ()</h3>
+                                <h2>Le crâne de<br>la mort</h2>
+                                <p>Il donne la chair de poule, qui fait froid dans le dos
+                                </p>
+                                <div>
+                                    <button type="button" class="btn btn-color-orange">En Savoir plus</button>
+                                    <button type="button" class="btn btn-transparent">Acheter des bonbons →</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-                <img src="img/acceuilcitr.png" alt="">
-            </article>
-            <article>
-                <h3>#1 Le fantôme le plus effrayant</h3>
-                <h2>UOOOO <br> des bonbons ou <br>un sort !!</h2>
-                <p>HLa maxime « un bonbon ou un sort » est la
-                    traduction littérale de « Trick or Treats»
-                    en français. Elle puise ses sources dans la
-                    mythologie cletique, notamment dans l'histoire 
-                    irlandaise du Ve siècle av.
-                </p>
-                <div>
-                    <input type="submit" name="" id="" value="En Savoir plus">
-                    <input type="submit" name="" id="" value="Acheter des bonbons →">
-                </div>
-            </article>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-        <section class="animation">
-            <article>
-                <div>
-                    <h4>Les yurei</h4>
-                    <span>fantôme du falkore japonais</span>
-                </div>
-                <img src="img/ghost.png" alt="">
-            </article>
-            <article>
-                <h3>#2 Yuu signifiant « sombre » et REI « âme ou Esprit»</h3>
-                <h2>Donnez-moi <br> de la barbe <br>a papa</h2>
-                <p>bien souvant dans la légende et mythes japonais,
-                    les yurei sont des défunts qui ont subi une mort 
-                    brutale, un destin tragique ou qui n'ont pas digéré leurs 
-                    tourments sur Terre. Ne pouvant trouver la paix, ces derniers 
-                    se retrouvent emprisonnés dans les limbes à tout jamais.
-                </p>
-                <div>
-                    <input type="submit" name="" id="" value="En Savoir plus">
-                    <input type="submit" name="" id="" value="Acheter des bonbons →">
-                </div>
-            </article>
-        </section>
-        <section class="animation">
-            <article>
-                <div>
-                    <h4>La tête</h4>
-                    <span>sans aucun doute anorexique</span>
-                </div>
-                <img src="img/bullefeu.png" alt="">
-            </article>
-            <article>
-                <h3>#3 La tête de mort ()</h3>
-                <h2>Le crâne de<br>la mort</h2>
-                <p>Il donne la chair de poule, qui fait froid dans le dos
-                </p>
-                <div>
-                    <input type="submit" name="" id="" value="En Savoir plus">
-                    <input type="submit" name="" id="" value="Acheter des bonbons →">
-                </div>
-            </article>
-        </section>
-        <section class="animation">
-            <h3>Catégorie de peur préférée</h3>
+        <section class="vh-100">
             <div>
-                <article>
-                    <img src="img/whiteghost.png" alt="">
-                    <h4>Les fantômes</h4>
-                    <span>Choisissez les fantômes, les plus 
-                        effrayants.
-                    </span>
+                <h3 class="text-center">Catégorie de peur préférée</h3>
+            </div>
+            <div class="d-flex flex-wrap">
+                <article class="w-50 d-flex flex-column justify-content-center">
+                    <img class="img-fluid" src="img/whiteghost.png" alt="">
+                    <h4 class="text-center">Les fantômes</h4>
+                    <span class="text-center">Choisissez les fantômes, les plus effrayants</span>
                 </article>
-                <article>
-                    <img src="img/citrou.png" alt="">
-                    <h4>Citrouilles</h4>
-                    <span>Vous regardez les citrouilles les plus 
+                <article class="w-50 d-flex flex-column justify-content-center">
+                    <img class="img-fluid" src="img/citrou.png" alt="">
+                    <h4 class="text-center">Citrouilles</h4>
+                    <span class="text-center">Vous regardez les citrouilles les plus 
                         effrayantes.
                     </span>
                 </article>
-                <article>
-                    <img src="img/chapeausoriciere.png" alt="">
-                    <h4>Chapeau de sorcière</h4>
-                    <span>Choisissez les chapeaux de sorcière les 
+                <article class="w-50 d-flex flex-column justify-content-center">
+                    <img class="img-fluid" src="img//chapeausoriciere.png" alt="">
+                    <h4 class="text-center">Chapeau de sorcière</h4>
+                    <span class="text-center">Choisissez les chapeaux de sorcière les 
                         plus stylés du marché.
                     </span>
                 </article>
             </div>
         </section>
-        <section class="animation" id="apropos">
-            <div>
-                <article>
-                    <h3>A propos de la nuit d'Halloween</h3>
-                    <p>La Nuit de tous les saints, ou de tous les morts, 
+        <section class="vh-100">
+            <article class="d-flex flex-column align-items-center gap-3">
+                <h3 class="text-center">A propos de la nuit d'Halloween</h3>
+                <p class="text-center">La Nuit de tous les saints, ou de tous les morts, 
                         est célébrée le 31 octobre et c'est une fête 
                         internationale très amusante, cette célébration 
                         vient d'origines anciennes et est déjà célébrée par tout le monde.
-                    </p>
-                    <div>
-                        <input type="submit" name="" id="" value="En savoir plus">
-                    </div>
-                </article>
-                <img src="img/chaudron.png" alt="">
+                </p>
+                <button type="button" class="btn btn-color-orange">En Savoir plus</button>
+            </article>
+            <div class=" d-flex justify-content-center">
+                <img class="w-75 img-fluid" src="img/chaudron.png" alt="">
             </div>
         </section>
-        <section class="animation" id="bonbons">
-            <h3>Des bonbons ou un sortilège</h3>
-            <article>
-                <div>
-                    <fieldset>
-                        <img src="img/bonbon1.png" alt="">
+        <section class="object-fit-contain">
+            <div>
+                <h3 class="text-center">Des bonbons ou un sortilège</h3>
+            </div>
+            <div class="d-flex flex-wrap justify-content-around gap-3">
+                <article class="d-flex flex-column align-items-center container-color rounded-3">
+                    <img class="img-fluid" src="img/bonbon1.png" alt="">
                         <h4>Caramels</h4>
                         <span>Bonbons</span>
                         <h5>11.99 €</h5>
-                    </fieldset>
-                    <fieldset>
-                        <img src="img/os.png" alt="">
-                        <h4>Os</h4>
-                        <span>Accessoires</span>
-                        <h5>8.99 €</h5>
-                    </fieldset>
-                    <fieldset>
-                        <img src="img/chapeaucitrouille.png" alt="">
-                        <h4>Épouvantail</h4>
-                        <span>Accessoires</span>
-                        <h5>15.99 €</h5>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <img src="img/bonbon2.png" alt="">
-                        <h4>Canne à sucre</h4>
-                        <span>Bonbons</span>
-                        <h5>7.99 €</h5>
-                    </fieldset>
-                    <fieldset>
-                        <img src="img/citre.png" alt="">
-                        <h4>Citrouille</h4>
-                        <span>Bonbons</span>
-                        <h5>19.99 €</h5>
-                    </fieldset>
-                    <fieldset>
-                        <img src="img/ghostblanc.png" alt="">
-                        <h4>Fantômes</h4>
-                        <span>Accesoires</span>
-                        <h5>17.99 €</h5>
-                    </fieldset>
-                </div>
-            </article>
-        </section>
-        <section class="animation" id="nouveautes">
-            <h3>Nouveautés</h3>
-            <div>
-                <fieldset>
-                    <div>
-                        <span>New</span>
-                    </div>
-                    <img src="img/chapeaubaton.png" alt="">
-                    <h4>Balai de sorcière</h4>
+                </article>
+                <article class="d-flex flex-column align-items-center container-color rounded-3">
+                    <img class="img-fluid" src="img/os.png" alt="">
+                    <h4>Os</h4>
                     <span>Accessoires</span>
-                    <div>
-                        <h5>7.99 €</h5>
-                        <span>14.99 €</span>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <span>New</span>
-                    </div>
-                    <img src="img/maison.png" alt="">
-                    <h4>Maison hantée</h4>
+                    <h5>8.99 €</h5>
+                </article>
+                <article class="d-flex flex-column align-items-center container-color rounded-3">
+                    <img class="img-fluid" src="img/chapeaucitrouille.png" alt="">
+                    <h4>Épouvantail</h4>
                     <span>Accessoires</span>
-                    <div>
-                        <h5>14.99 €</h5>
-                        <span>29.99 €</span>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <div>
-                        <span>New</span>
-                    </div>
-                    <img src="img/tetemortbougie.png" alt="">
-                    <h4>Bougie d'Halloween</h4>
-                    <span>Accessoires</span>
-                    <div>
-                        <h5>11.99 €</h5>
-                        <span>21.99 €</span>
-                    </div>
-                </fieldset>
+                    <h5>15.99 €</h5>
+                </article>
+                <article class="d-flex flex-column align-items-center container-color rounded-3">
+                    <img class="img-fluid" src="img/bonbon2.png" alt="">
+                    <h4>Canne à sucre</h4>
+                    <span>Bonbons</span>
+                    <h5>7.99 €</h5>
+                </article>
+                <article class="d-flex flex-column align-items-center container-color rounded-3">
+                    <img class="img-fluid" src="img/citre.png" alt="">
+                    <h4>Citrouille</h4>
+                    <span>Bonbons</span>
+                    <h5>19.99 €</h5>
+                </article>
+                <article class="d-flex flex-column align-items-center container-color rounded-3">
+                    <img class="img-fluid" src="img/ghostblanc.png" alt="">
+                    <h4>Fantômes</h4>
+                    <span>Accesoires</span>
+                    <h5>17.99 €</h5>
+                </article>
             </div>
         </section>
-        <section class="animation">
-            <article>
-                <img src="img/chauvesouris.png" alt="">
-                <div>
-                    <h4>50 % de réduction <br> sur les nouveaux produits</h4>
-                    <a href="#nouveautes"><input type="submit" name="" id="" value="Vers les nouveautés"></a>
+        <section class="vh-75">
+            <article class="container-color rounded-4 m-4 p-4">
+                <div class="d-flex flex-column align-items-center gap-3">
+                    <h3 class="text-center">50% de réduction sur les nouveaux produits</h3>
+                    <button type="button" class="btn btn-color-orange">Vers les nouveautés</button>
                 </div>
+                <img class="img-fluid" src="img/chauvesouris.png" alt="">
             </article>
         </section>
-        <section>
-            <fieldset>
-                <input type="radio" onclick="normalMode()" name="noir" id="" checked="">
-                <input type="radio" onclick="fondNoir()" name="noir" id="">
-                <input type="radio" onclick="fondBlanc()" name="noir" id="">
-            </fieldset>
-        </section>
-        <section id="supportdiv">
+        <section class="object-fit-contain">
             <div>
-                <div>
-                    <img src="img/chat.svg" alt="">
-                    <span>Notre Support</span>
-                    <img src="img/x-circle.svg" alt="" onclick="fermerSupport()">
-                </div>
-                <div id="supportChat">
-                    <div class="supportmessage">
-                        <p>Bienvenu dans le chat de communication avec notre support ! Laissez un message on vous répondera le plus vite possible</p>
-                    </div>
-                </div>
-                <div>
-                    <input type="text" name="" id="inpchat" placeholder="Ecrivez ici !">
-                    <button onclick="envoyerMessage()"><img src="" alt="">Env</button>
-                </div>
+                <h3 class="text-center">Nouveautés</h3>
             </div>
-        </section>
-        <section id="signup">
-            <form method="post">
-                <div>
-                    <img src="img/x-circle.svg" alt="" onclick="fermerSignup()">
-                </div>
-                <div>
-                    <label for="nom">Nom de famille</label>
-                    <input type="text" name="nom" id="nom" placeholder="Entrez votre nom de famille" required>
-                </div>
-                <div>
-                    <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" required>
-                </div>
-                <div>
-                    <label for="mail">Email</label>
-                    <input type="text" name="mail" id="mail" placeholder="Entrez votre adresse mail" required>
-                </div>
-                <div>
-                    <label for="password">Mot de passe</label>
-                    <input type="text" name="password" id="password" placeholder="Entrez votre de passe" required>
-                </div>
-                <div>
-                    <input type="checkbox" name="pasoublier" id="pasoublier">
-                    <label for="pasoublier">Rester connecter</label>
-                </div>
-                <div>
-                    <input type="submit" name="" id="fsubmit" value="S'inscrire">
-                </div>
-                <div>
+            <div>
+                <article class="container-color rounded-4 p-4 m-4">
                     <div>
-                        <a href=""><img src="" alt="">Google</a>
+                        <span class="btn-color-orange p-2 rounded-1">New</span>
                     </div>
+                    <img class="img-fluid" src="img/chapeaubaton.png" alt="">
+                    <h4 class="text-center">Balai de sorcière</h4>
+                    <span class="d-flex justify-content-center">Accesoires</span>
+                    <div class="d-flex justify-content-center">
+                        <h5 class="text-center">7.99 €</h5>
+                        <span class="text-center orange-color text-decoration-line-through">14.99 €</span>
+                    </div>
+                </article>
+                <article class="container-color rounded-4 p-4 m-4">
                     <div>
-                        <a href=""><img src="" alt="">Apple</a>
+                        <span class="btn-color-orange p-2 rounded-1">New</span>
                     </div>
-                </div>
-            </form>
-        </section>
-        <section id="pub">
-            <article>
-                <div>
-                    <button onclick="fermerPub()"><img src="img/x-circle.svg" alt=""></button>
-                </div>
-                <div>
-                    <img src="img/chauvesouris.png" alt="">
+                    <img class="img-fluid" src="img/maison.png" alt="">
+                    <h4 class="text-center">Maison hantée</h4>
+                    <span class="d-flex justify-content-center">Accesoires</span>
+                    <div class="d-flex justify-content-center">
+                        <h5 class="text-center">14.99 €</h5>
+                        <span class="text-center orange-color text-decoration-line-through">29.99 €</span>
+                    </div>
+                </article>
+                <article class="container-color rounded-4 p-4 m-4">
                     <div>
-                        <h4>50 % de réduction <br> sur les nouveaux produits</h4>
-                        <a href="#nouveautes"><input type="submit" name="" id="" value="Vers les nouveautés"></a>
+                        <span class="btn-color-orange p-2 rounded-1">New</span>
                     </div>
-                </div>
-            </article>
+                    <img class="img-fluid" src="img/tetemortbougie.png" alt="">
+                    <h4 class="text-center">Bougie d'Halloween</h4>
+                    <span class="d-flex justify-content-center">Accesoires</span>
+                    <div class="d-flex justify-content-center">
+                        <h5 class="text-center">11.99 €</h5>
+                        <span class="text-center orange-color text-decoration-line-through">21.99 €</span>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <section class="animation">
-            <article>
-                <a href="#">
-                    <img src="img/logo.png" alt="">
-                    Halloween
-                </a>
-                <p>profitez de la nuit la plus effrayabte de votre vie.</p>
-                <section>
+        <section class="vh-100">
+            <div class="d-flex flex-column gap-5 p-3">
+                <div class="d-flex flex-column gap-4">
                     <div>
-                        <a href="#"><img src="img/moodle.png" alt=""></a>
-                        <a href="#"><img src="img/github.svg" alt=""></a>
-                        <a href="#"><img src="img/instagram.svg" alt=""></a>
+                        <img src="img/tetemort.png" alt="">
+                        <span>Halloween</span>
                     </div>
+                    <p>Profitez de la nuit la plus effrayante<br> de votre vie.</p>
                     <div>
-                        <img src="img/ghostlookingleft.png" alt="">
+                        <a href=""><img class="img-fluid container-color rounded-3 p-2" src="img/github.svg" alt=""></a>
+                        <a href=""><img class="img-fluid container-color rounded-3 p-2" src="img/moodle.png" alt=""></a>
+                        <a href=""><img class="img-fluid container-color rounded-3 p-2" src="img/instagram.svg" alt=""></a>
                     </div>
-                </section>
-            </article>
-            <article>
-                <h4>A Propos</h4>
-                <ul>
-                    <li><a href="#">A Propos</a></li>
-                    <li><a href="#">Caractéristiques</a></li>
-                    <li><a href="#">Nouveautés</a></li>
-                </ul>
-            </article>
-            <article>
-                <h4>Nos prestations</h4>
-                <ul>
-                    <li><a href="#">A Tarifs</a></li>
-                    <li><a href="#">Réductions</a></li>
-                    <li><a href="#">Mode d'expédition</a></li>
-                </ul>
-            </article>
-            <article>
-                <div>
-                    <h4>Notre entreprise</h4>
-                    <ul>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Notre mission</a></li>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <h4>A propos</h4>
+                    <ul class="d-flex flex-column gap-2 list-unstyled">
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">A propos</a>
+                        </li>
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Caractéristiques</a>
+                        </li>
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Nouveautés</a>
+                        </li>
                     </ul>
                 </div>
-                <img src="img/oneghost.png" alt="">
-            </article>
+                <div class="d-flex flex-column gap-4">
+                    <h4>Nos prestations</h4>
+                    <ul class="d-flex flex-column gap-2 list-unstyled">
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Tarifs</a>
+                        </li>
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Réductions</a>
+                        </li>
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Mode d'expédition</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-4">
+                    <h4>Notre entreprise</h4>
+                    <ul class="d-flex flex-column gap-2 list-unstyled">
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">A propos</a>
+                        </li>
+                        <li>
+                            <a class="link-underline link-underline-opacity-0" href="#">Notre mission</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img class="img-fluid" src="img/ghostlookingleft.png" alt="">
+            <div class="d-flex justify-content-center">
+                <span>&#169; BTS SIO - La Colinière - BAKOURI Soufiane</span>
+            </div>
         </section>
-        <a href="#acceuil"><button>↑</button></a>
-        <span>&copy; BTS SIO. La Colinière - BAKOURI Soufiane</span>
     </footer>
 </body>
 </html>
