@@ -39,6 +39,12 @@
     #phonenav{
         visibility: hidden;
     }
+    .flex-row{
+    flex-direction: row !important;
+    }
+    .section-firstdiv{
+        width: 40vw !important;
+    }
 }
 
 footer a{
@@ -105,3 +111,4 @@ section:nth-child(4) > div:nth-child(2) > article{
 footer > section > div > div > div:last-child > a > img{
     width: 10vw;
 }
+
