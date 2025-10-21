@@ -46,7 +46,7 @@
         width: 40vw !important;
     }
     .section-seconddiv{
-        
+        display: flex;
     }
 }
 
