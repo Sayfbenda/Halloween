@@ -42,6 +42,12 @@
     .flex-row{
     flex-direction: row !important;
     }
+    section{
+        height: 100vh;
+    }
+    section div{
+        height: 100%;
+    }
     .section-article{
         width: 45vw !important;
     }
