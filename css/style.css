@@ -42,11 +42,17 @@
     .flex-row{
     flex-direction: row !important;
     }
-    .section-firstdiv{
-        width: 40vw !important;
+    .section-article{
+        width: 45vw !important;
     }
-    .section-seconddiv{
-        display: flex;
+    .section-div{
+        justify-content: space-around !important;
+    }
+    img{
+        width: 100% !important;
+    }
+    .section-articlescnd{
+        gap: 5rem !important;
     }
 }
 
