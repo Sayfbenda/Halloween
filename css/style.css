@@ -208,6 +208,22 @@
     main > section:nth-child(5) > article > img{
         width: 40vw;
     }
+    main > section:nth-child(6){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100vh !important;
+    }
+    main > section:nth-child(6) div{
+        height: fit-content !important;
+    }
+    main > section:nth-child(6) > div:last-child{
+        display: flex;
+        flex-direction: row;
+    }
+    main > section:nth-child(6) > div:last-child > article{
+        width: 30vw;
+    }
 }
 
 header{
