@@ -518,6 +518,36 @@ form > div > button:last-child{
     img:hover{
         animation: imagefly 2s infinite;
     }
+    p, h2, h3 {
+    animation-duration: 3s;
+    animation-name: slide-in;
+    }
+    div{
+        animation-duration: 1s;
+        animation-name: fade;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
 }
 
 @keyframes imagefly {
