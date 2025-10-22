@@ -113,6 +113,16 @@ footer > section > div > div > div:last-child > a > img{
     height: 100vh;
 }
 
+main > section:last-child > div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        height: 100vh;
+    }
+
 @media (min-width: 576px){
     *{
         padding: 0;
