@@ -205,6 +205,14 @@ main > section:nth-child(8) > div > div:nth-child(3) > button{
     visibility: hidden;
 }
 
+input[type="submit"]{
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
 @media (min-width: 576px){
     *{
         padding: 0;
@@ -252,7 +260,7 @@ main > section:nth-child(8) > div > div:nth-child(3) > button{
     header > div > nav{
         z-index: 1;
         width: 100vw;
-        height: 5vh;
+        height: 8vh;
         background: var(--container-color);
         display: flex;
         position: fixed !important;
