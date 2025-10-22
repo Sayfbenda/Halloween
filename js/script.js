@@ -62,3 +62,24 @@ function envoyerMessage(message) {
 function envoyerMessageReponse() {
     supportDiv.innerHTML += `<p class="support-reply">Votre Message a été transmi à notre support technique, une vous répondera le plus vite possible</p>`
 }
+
+const entringSection = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+        console.log(entry)
+        if(entry.isIntersecting && entry.target.id === "accueil"){
+            console.log("Accueil visible")
+        }else if(entry.isIntersecting && entry.target.id === "apropos"){
+            console.log("Accueil visible")
+        }
+        else if(entry.isIntersecting && entry.target.id === "bonbons"){
+            console.log("Accueil visible")
+        }else if(entry.isIntersecting && entry.target.id === "nouveautes"){
+            console.log("Accueil visible")
+        }
+})
+})
+
+const animatedSections = document.querySelectorAll('.animation');
+animatedSections.forEach(section => {
+    entringSection.observe(section)
+});
