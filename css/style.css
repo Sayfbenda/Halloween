@@ -526,6 +526,9 @@ form > div > button:last-child{
         animation-duration: 1s;
         animation-name: fade;
     }
+    button > img{
+        animation: none !important;
+    }
 }
 
 @keyframes fade {
