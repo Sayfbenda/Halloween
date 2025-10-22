@@ -116,19 +116,51 @@ main > section:last-child{
     height: 0vh;
 }
 main > section:last-child > div:nth-child(1){
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 1rem;
-        position: fixed;
-        top: 0;
-        height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    height: 100vh;
 }
 
 main > section:nth-child(1) > div > button{
     z-index: inherit;
 }
 
+main > section:last-child > div:first-child > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: var(--container-color);
+    height: fit-content !important;
+}
+
+main > section:last-child > div:first-child > div:hover{
+    scale: 1.25;
+    transform: 1s;
+}
+
+button:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+main > section:last-child > div:first-child > div > button{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--text-color);
+}
+
+main > section:last-child > div:first-child > div > button:nth-child(1){
+    background: linear-gradient(to right, #111111, #141414, #171717, #191919, #1c1c1c);
+}
+
+main > section:last-child > div:first-child > div > button:nth-child(2){
+    background: linear-gradient(90deg, hsl(104, 28%, 40%), hsl(58, 28%, 40%) 100%);
+}
 @media (min-width: 576px){
     *{
         padding: 0;
