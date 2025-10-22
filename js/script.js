@@ -7,5 +7,3 @@ function darkMode() {
     root.style.setProperty("--text-color:", "#f5f5f7")
     root.style.setProperty("--container-color", "linear-gradient(to right, #202020, #1d1d1d, #1b1b1b, #181818, #161616, #161616, #161616, #161616, #181818, #1b1b1b, #1d1d1d, #202020)")
 }
-
-darkMode()
