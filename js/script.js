@@ -84,6 +84,10 @@ function borderBottomList(element) {
         navList[1].children[index].style.setProperty("border-bottom", "none")        
     }
     navList[1].children[element].style.setProperty("border-bottom", "2px solid white")
+    for (let index = 0; index < navList[0].children.length; index++) {
+        navList[0].children[index].style.setProperty("border-bottom", "none")        
+    }
+    navList[0].children[element].style.setProperty("border-bottom", "2px solid white")
 }
 
 const animatedSections = document.querySelectorAll('.animation');
