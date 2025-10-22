@@ -73,7 +73,7 @@ h5{
 }
 
 p, span{
-    color: var(--paragraphe-color);
+    color: var(--paragraphe-color) !important;
 }
 
 body{
