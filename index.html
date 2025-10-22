@@ -29,7 +29,7 @@
                             <a class="link-offset-2 link-underline link-underline-opacity-0 text-light" href="#">Nouveautés</a>
                         </li>
                         <li>
-                            <button class="bg-transparent border border-white p-2 rounded-2">Support</button>
+                            <button onclick="toggleSupport()" class="bg-transparent border border-white p-2 rounded-2">Support</button>
                         </li>
                         <li>
                             <button class="bg-transparent border border-white p-2 rounded-2">Sign up</button>
@@ -70,7 +70,7 @@
                     </a>
                 </ul>
                 <div>
-                    <input type="submit" name="" id="inpsupport" value="Support" onclick="apparaitreSupport()">
+                    <input type="submit" name="" id="inpsupport" value="Support" onclick="toggleSupport()">
                     <input type="submit" name="" id="inpsignup" value="Sign Up" onclick="signUp()">
                 </div>
             </nav>
@@ -305,11 +305,14 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="support">
             <div>
                 <div>
-                    <img src="img/tetemort.png" alt="">
-                    <span>Support</span>
+                    <div>
+                        <img src="img/tetemort.png" alt="">
+                        <span>Support</span>
+                    </div>
+                    <button onclick="toggleSupport()"><img src="img/x-circle.svg" alt=""></button>
                 </div>
                 <div>
                     <div>

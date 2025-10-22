@@ -181,6 +181,8 @@ main > section:nth-child(8) > div{
 }
 
 main > section:nth-child(8) > div > div:first-child{
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid;
     padding-bottom: 0.5rem;
 }
@@ -197,6 +199,10 @@ main > section:nth-child(8) > div > div:nth-child(3) > input{
 
 main > section:nth-child(8) > div > div:nth-child(3) > button{
     width: 25%;
+}
+
+#support{
+    visibility: hidden;
 }
 
 @media (min-width: 576px){
