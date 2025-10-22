@@ -230,7 +230,7 @@ footer > section > div > div > div:last-child > a > img{
         width: 40vw;
     }
     main > section:nth-child(3) > div > img{
-        height: 100% !important;
+        height: max-content !important;
         width: 100% !important;
     }
     main > section:nth-child(4){
@@ -295,6 +295,8 @@ footer > section > div > div > div:last-child > a > img{
     }
     main > section:nth-child(6) div{
         height: fit-content !important;
+        display: flex;
+        justify-content: space-around;
     }
     main > section:nth-child(6) > div:last-child{
         display: flex;
