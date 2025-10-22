@@ -515,4 +515,19 @@ form > div > button:last-child{
     main > section:nth-child(8) > div{
     width: 25vw;
     }
+    img:hover{
+        animation: imagefly 2s infinite;
+    }
+}
+
+@keyframes imagefly {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
