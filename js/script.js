@@ -1,7 +1,8 @@
 var root = document.querySelector(":root")
 const support = document.getElementById("support")
+const signUp = document.getElementById("signup")
 let supportVisible = false
-
+let signUpVisible = false
 
 function darkMode() {
     root.style.setProperty("--body-color", "linear-gradient(to right, #111111, #141414, #171717, #191919, #1c1c1c)")
@@ -22,5 +23,15 @@ function toggleSupport(){
     } else {
         support.style.visibility = "visible"
         supportVisible = true
+    }
+}
+
+function toogleSignUp(){
+    if(signUpVisible){
+        signUp.style.visibility = "hidden"
+        signUpVisible = false
+    } else {
+        signUp.style.visibility = "visible"
+        signUpVisible = true
     }
 }
