@@ -4,6 +4,7 @@ const signUp = document.getElementById("signup")
 const messageButton =  document.getElementById("messagebutton")
 const inputMessage = document.getElementById("inputMessage")
 const supportDiv = document.getElementById("supportDiv")
+const navList = document.getElementsByClassName("dynamic-li")
 let supportVisible = false
 let signUpVisible = false
 
@@ -65,19 +66,25 @@ function envoyerMessageReponse() {
 
 const entringSection = new IntersectionObserver(function(entries){
     entries.forEach(entry => {
-        console.log(entry)
         if(entry.isIntersecting && entry.target.id === "accueil"){
-            console.log("Accueil visible")
+            borderBottomList(0)
         }else if(entry.isIntersecting && entry.target.id === "apropos"){
-            console.log("Accueil visible")
+            borderBottomList(1)
         }
         else if(entry.isIntersecting && entry.target.id === "bonbons"){
-            console.log("Accueil visible")
+            borderBottomList(2)
         }else if(entry.isIntersecting && entry.target.id === "nouveautes"){
-            console.log("Accueil visible")
+            borderBottomList(3)
         }
 })
 })
+
+function borderBottomList(element) {
+    for (let index = 0; index < navList[1].children.length; index++) {
+        navList[1].children[index].style.setProperty("border-bottom", "none")        
+    }
+    navList[1].children[element].style.setProperty("border-bottom", "2px solid white")
+}
 
 const animatedSections = document.querySelectorAll('.animation');
 animatedSections.forEach(section => {
