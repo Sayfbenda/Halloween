@@ -271,6 +271,27 @@ form > div > button:last-child{
     visibility: hidden;
 }
 
+.support-reply{
+    background-color: rgb(255, 255, 255);
+    color: black !important;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    width: fit-content;
+}
+
+.user-message{
+    background-color: rgb(0, 123, 255);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    width: fit-content;
+}
 
 @media (min-width: 576px){
     *{

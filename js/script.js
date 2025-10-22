@@ -1,6 +1,9 @@
 var root = document.querySelector(":root")
 const support = document.getElementById("support")
 const signUp = document.getElementById("signup")
+const messageButton =  document.getElementById("messagebutton")
+const inputMessage = document.getElementById("inputMessage")
+const supportDiv = document.getElementById("supportDiv")
 let supportVisible = false
 let signUpVisible = false
 
@@ -34,4 +37,28 @@ function toogleSignUp(){
         signUp.style.visibility = "visible"
         signUpVisible = true
     }
+}
+
+addEventListener("keydown", function(event){
+    if(event.key === "Enter" && inputMessage === document.activeElement){
+        envoyerMessage(inputMessage.value)
+        setTimeout(() => {
+            envoyerMessageReponse()
+        }, 1000);
+    }
+})
+
+messageButton.addEventListener("click", function(){
+    envoyerMessage(inputMessage.value)
+    setTimeout(() => {
+        envoyerMessageReponse()
+    }, 1000);
+})
+
+function envoyerMessage(message) {
+    supportDiv.innerHTML += `<p class="user-message">${message}</p>`
+}
+
+function envoyerMessageReponse() {
+    supportDiv.innerHTML += `<p class="support-reply">Votre Message a été transmi à notre support technique, une vous répondera le plus vite possible</p>`
 }
