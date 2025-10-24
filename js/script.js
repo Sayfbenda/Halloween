@@ -7,6 +7,8 @@ const supportDiv = document.getElementById("supportDiv")
 const navList = document.getElementsByClassName("dynamic-li")
 let supportVisible = false
 let signUpVisible = false
+let panierObjects = []
+
 
 const caramels = new Object()
 caramels.nom = "Caramels"
