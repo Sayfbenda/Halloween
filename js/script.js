@@ -8,6 +8,36 @@ const navList = document.getElementsByClassName("dynamic-li")
 let supportVisible = false
 let signUpVisible = false
 
+const caramels = new Object()
+caramels.nom = "Caramels"
+caramels.prix = 11.99
+caramels.image = "../img/bonbon1.png"
+
+const os = new Object()
+os.nom = "Os"
+os.prix = 8.99
+os.image = "../img/os.png"
+
+const epouventail = new Object()
+epouventail.nom = "Épouvantail"
+epouventail.prix = 15.99
+epouventail.image = "../img/chapeaucitrouille.png"
+
+const canneAsucre = new Object()
+canneAsucre.nom = "Canne à sucre"
+canneAsucre.prix = 7.99
+canneAsucre.image = "../img/bonbon2.png"
+
+const citrouille = new Object()
+citrouille.nom = "Citrouille"
+citrouille.prix = 19.99
+citrouille.image = "../img/citre.png"
+
+const fantome = new Object()
+fantome.nom = "Fantômes"
+fantome.prix = 17.99
+fantome.image = "../img/ghostblanc.png"
+
 function darkMode() {
     root.style.setProperty("--body-color", "linear-gradient(to right, #111111, #141414, #171717, #191919, #1c1c1c)")
     root.style.setProperty("--text-color:", "black")
