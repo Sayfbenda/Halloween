@@ -22,13 +22,10 @@
     --orange-color : #f45120;
 
     --body-font: 'Poppins', sans-serif;
-    --biggest-font-size: 2rem;
-    --h2-font-size: 2rem;
-    --h3-font-size: 1rem;
-    --h4-font-size: 1rem;
+    --h2-font-size: 2.3rem;
+    --h3-font-size: 1.8rem;
+    --h4-font-size: 1.2rem;
     --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
 
     --font-medium: 500;
     --font-semi-bold: 600;
@@ -73,7 +70,7 @@ h5{
 }
 
 p, span{
-    color: var(--paragraphe-color) !important;
+    color: var(--paragraphe-color);
 }
 
 body{
