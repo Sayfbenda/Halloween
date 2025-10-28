@@ -71,6 +71,7 @@ p, span{
 
 body{
     background: var(--body-color);
+    overflow-x: hidden;
 }
 
 .container-color{
@@ -415,7 +416,7 @@ main > section:nth-child(8) p{
         text-align: left !important;
     }
     main > section:nth-child(3) > div{
-        width: 40vw;
+        width: 30vw;
     }
     main > section:nth-child(3) > div > img{
         height: max-content !important;
@@ -443,11 +444,11 @@ main > section:nth-child(8) p{
         justify-content: center !important;
         background-color: black !important;
         width: 15vw;
-        height: 30vh;
+        height: fit-content !important;
         padding: 2rem;
     }
     main > section:nth-child(4) > div:last-child > article > img{
-        width: 100% !important;
+        width: 90% !important;
     }
     main > section:nth-child(5){
         display: flex;
