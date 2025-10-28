@@ -8,11 +8,6 @@ const navList = document.getElementsByClassName("dynamic-li")
 let supportVisible = false
 let signUpVisible = false
 
-const caramels = new Object()
-caramels.nom = "Caramels"
-caramels.prix = 11.99
-caramels.image = "../img/bonbon1.png"
-
 
 function darkMode() {
     root.style.setProperty("--body-color", "linear-gradient(to right, #111111, #141414, #171717, #191919, #1c1c1c)")
